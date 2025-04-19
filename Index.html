@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>CBOW Game – Guess the Missing Word</h1>
+  <p><strong>Sentence:</strong> <span id="sentence"></span></p>
+  <p><strong>Context:</strong> <span id="context"></span></p>
+
+  <input type="text" id="guess" placeholder="Enter your guess..." />
+  <div class="buttons">
+    <button onclick="submitGuess()">Submit</button>
+    <button onclick="nextRound()" id="nextBtn" style="display:none;">Next</button>
+  </div>
+
+  <p id="feedback"></p>
+  <p><strong>Score:</strong> <span id="score">0</span>/10</p>
+  <p id="gameEnd" style="font-weight: bold; color: green;"></p>
+  <button onclick="startGame()" id="playAgainBtn" style="display:none;">Play Again</button>
+</div>
